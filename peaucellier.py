@@ -346,12 +346,7 @@ class Root(Tk):
         self.ax2 = self.fig.add_subplot(gs[0,1:])
         self.measure_state = True
         self.animate(0)
-        self.measure_state = False
-        
-        
-
-
-        
+        self.measure_state = False      
 
 root = Root()
 ani = animation.FuncAnimation(root.fig, root.animate, interval=50)
